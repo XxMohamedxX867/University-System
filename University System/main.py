@@ -72,7 +72,7 @@ def edit_student():
                         break
                 if chk_id == True:
                     break
-            Student_Data[cnt]={"ID": NEW_ID, "Name": name, "Age": age, "GPA": gpa}
+            Student_Data[cnt][{"ID": NEW_ID, "Name": name, "Age": age, "GPA": gpa}]
         else:
             cnt += 1
     if chk_no_current_id:
