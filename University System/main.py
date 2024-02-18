@@ -1,5 +1,3 @@
-import sys
-
 Student_Data = []
 Admin_Data = [{"username":"Gebaly","password":"1234"}]
 id = 1
@@ -148,7 +146,7 @@ def admin():
                     elif start_num == 5:
                         give_access()
                     elif start_num == 6:
-                        start()
+                        return 0;
                 except:
                     print("Please enter Number of these!")
 
@@ -175,7 +173,7 @@ def student():
                     elif start_num == 2:
                         chanege_password(i,cnt)
                     elif start_num == 3:
-                        start()
+                        return 0;
                 except:
                     print("Please enter Number of these!")
 
@@ -211,7 +209,7 @@ def start():
                 student()
             elif start_num == 3:
                 print("Good Bye <3")
-                return 0                                #problem
+                return 0
         except:
             print("Please enter Number of these!")
 start()
